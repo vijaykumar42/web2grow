@@ -175,7 +175,7 @@ export default function () {
             <FaSquareWhatsapp className="text-primary mx-auto" size={40} />
             <h2 className="text-xl font-bold">WhatsApp</h2>
             <p className="text-primary text-sm font-medium">
-              <Link href="https://wa.me/#">+91 9848012345</Link>
+              <Link href="#">+91 9848012345</Link>
             </p>
           </div>
           <div className="border p-8 rounded-md space-y-2 bg-white text-center">
