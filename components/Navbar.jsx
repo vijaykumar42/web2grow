@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className="p-4 md:px-8 flex justify-between items-center border-b h-20">
       <h1 className="font-bold text-2xl cursor-pointer hover:text-primary">
-        Web2Grow
+        <Link href="/">Web2Grow</Link>
       </h1>
       <div className="hidden md:block">
         <div className="flex justify-center items-center gap-8">
