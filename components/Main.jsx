@@ -55,14 +55,19 @@ const services = [
 
 const projects = [
   {
-    name: "Web2Grow",
+    name: "Health Care",
     service: "Web Development",
-    link: "https://web2grow.vercel.app",
+    link: "https://web2grow.vercel.app/healthcare",
   },
   {
     name: "Kinder Garden",
     service: "Web Development",
     link: "https://web2grow.vercel.app/school",
+  },
+  {
+    name: "Web2Grow",
+    service: "Web Development",
+    link: "https://web2grow.vercel.app",
   },
   {
     name: "I Like Calculator",
