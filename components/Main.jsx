@@ -55,6 +55,16 @@ const services = [
 
 const projects = [
   {
+    name: "Web2Grow",
+    service: "Web Development",
+    link: "https://web2grow.vercel.app",
+  },
+  {
+    name: "Kinder Garden",
+    service: "Web Development",
+    link: "https://web2grow.vercel.app/school",
+  },
+  {
     name: "I Like Calculator",
     service: "Web Development",
     link: "https://www.ilikecalculator.com/",
@@ -167,21 +177,19 @@ export default function () {
           <div className="border p-8 rounded-md space-y-2 bg-white text-center">
             <FaSquarePhone className="text-primary mx-auto" size={40} />
             <h2 className="text-xl font-bold">Call Here</h2>
-            <p className="text-muted-foreground text-sm font-medium">
-              +91 9848012345
-            </p>
+            <p className="text-muted-foreground font-medium">+91 9848012345</p>
           </div>
           <div className="border p-8 rounded-md space-y-2 bg-white text-center">
             <FaSquareWhatsapp className="text-primary mx-auto" size={40} />
             <h2 className="text-xl font-bold">WhatsApp</h2>
-            <p className="text-primary text-sm font-medium">
+            <p className="text-primary font-medium">
               <Link href="#">+91 9848012345</Link>
             </p>
           </div>
           <div className="border p-8 rounded-md space-y-2 bg-white text-center">
             <MdEmail className="text-primary mx-auto" size={40} />
             <h2 className="text-xl font-bold">Mail Here</h2>
-            <p className="text-primary text-sm font-medium">
+            <p className="text-primary font-medium">
               <Link href="#">contact@web2grow.in</Link>
             </p>
           </div>
