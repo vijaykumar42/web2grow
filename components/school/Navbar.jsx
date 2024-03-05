@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className="p-4 md:px-8 flex justify-between items-center border-b h-20">
       <h1 className="font-bold text-2xl cursor-pointer text-sky-500 hover:text-sky-500/90">
-        <Link href="/">KinderGarden</Link>
+        <Link href="/school">KinderGarden</Link>
       </h1>
       <div className="hidden md:block">
         <div className="flex justify-center items-center gap-8">

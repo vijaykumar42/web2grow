@@ -132,7 +132,7 @@ export default function Main() {
           ex.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
-          <div className=" flex flex-col items-center border p-8 rounded-md space-y-2 bg-sky-50 text-center md:hover:scale-105 transition-transform duration-300 ease-in-out">
+          <div className=" flex flex-col items-center border p-8 rounded-md space-y-2 bg-white text-center md:hover:scale-105 transition-transform duration-300 ease-in-out">
             <Image
               className="rounded-full"
               src="/school/teacher.jpeg"
