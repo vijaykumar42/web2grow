@@ -196,7 +196,7 @@ export default function () {
           Discover our flexible pricing plans tailored for your web design,
           development other needs.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:px-0 md:px-28 px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:px-0 md:px-28">
           {pricing.map((price) => (
             <div className="border p-8 rounded-md space-y-4 bg-primary-foreground text-center md:hover:scale-105 transition-transform duration-300 ease-in-out">
               <h2 className="text-xl font-bold uppercase">{price.name}</h2>
