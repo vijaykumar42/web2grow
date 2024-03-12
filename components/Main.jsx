@@ -120,6 +120,17 @@ const pricing = [
     social: "Social media integration",
     support: "Free support",
   },
+  {
+    name: "Custom",
+    price: "???",
+    pages: "Custom Features",
+    domain: "Free Domain 1 year",
+    hosting: "Free Hosting 1 year",
+    design: "100% Responsive design",
+    seo: "SEO friendly website",
+    social: "Social media integration",
+    support: "Free support",
+  },
 ];
 
 export default function () {
@@ -185,7 +196,7 @@ export default function () {
           Discover our flexible pricing plans tailored for your web design,
           development other needs.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 px-12 md:px-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:px-0 md:px-28 px-16">
           {pricing.map((price) => (
             <div className="border p-8 rounded-md space-y-4 bg-primary-foreground text-center md:hover:scale-105 transition-transform duration-300 ease-in-out">
               <h2 className="text-xl font-bold uppercase">{price.name}</h2>
