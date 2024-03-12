@@ -56,17 +56,17 @@ const services = [
 const projects = [
   {
     name: "Health Care",
-    service: "Web Development",
+    service: "Web Design + Development",
     link: "https://web2grow.vercel.app/healthcare",
   },
   {
     name: "Kinder Garden",
-    service: "Web Development",
+    service: "Web Design + Development",
     link: "https://web2grow.vercel.app/school",
   },
   {
     name: "Web2Grow",
-    service: "Web Development",
+    service: "Web Design + Development",
     link: "https://web2grow.vercel.app",
   },
   {
@@ -81,8 +81,44 @@ const projects = [
   },
   {
     name: "Aadhyantha Academy",
-    service: "Web Development",
+    service: "Web Design + Development",
     link: "https://www.aadhyanthaacademy.com/",
+  },
+];
+
+const pricing = [
+  {
+    name: "Basic",
+    price: "9,000",
+    pages: "Single page website",
+    domain: "Free Domain 1 year",
+    hosting: "Free Hosting 1 year",
+    design: "100% Responsive design",
+    seo: "SEO friendly website",
+    social: "Social media integration",
+    support: "Free support",
+  },
+  {
+    name: "Standard",
+    price: "18,000",
+    pages: "5+ pages website",
+    domain: "Free Domain 1 year",
+    hosting: "Free Hosting 1 year",
+    design: "100% Responsive design",
+    seo: "SEO friendly website",
+    social: "Social media integration",
+    support: "Free support",
+  },
+  {
+    name: "Pro",
+    price: "25,000",
+    pages: "10+ pages website",
+    domain: "Free Domain 1 year",
+    hosting: "Free Hosting 1 year",
+    design: "100% Responsive design",
+    seo: "SEO friendly website",
+    social: "Social media integration",
+    support: "Free support",
   },
 ];
 
@@ -140,8 +176,52 @@ export default function () {
           ))}
         </div>
       </div>
+      {/* pricing */}
+      <div id="pricing" className="space-y-4 py-16 px-4 md:px-8">
+        <h2 className="font-bold text-3xl md:text-4xl text-center">
+          Our Pricing Plans
+        </h2>
+        <p className="text-muted-foreground text-center md:px-48">
+          Discover our flexible pricing plans tailored for your web design,
+          development other needs.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 px-12 md:px-24">
+          {pricing.map((price) => (
+            <div className="border p-8 rounded-md space-y-4 bg-primary-foreground text-center md:hover:scale-105 transition-transform duration-300 ease-in-out">
+              <h2 className="text-xl font-bold uppercase">{price.name}</h2>
+              <h2 className="text-3xl font-bold text-primary">
+                &#8377;{price.price}
+              </h2>
+              <p className="text-muted-foreground font-medium">{price.pages}</p>
+              <p className="text-muted-foreground font-medium">
+                {price.domain}
+              </p>
+              <p className="text-muted-foreground font-medium">
+                {price.hosting}
+              </p>
+              <p className="text-muted-foreground font-medium">
+                {price.design}
+              </p>
+              <p className="text-muted-foreground font-medium">{price.seo}</p>
+              <p className="text-muted-foreground font-medium">
+                {price.social}
+              </p>
+              <p className="text-muted-foreground font-medium">
+                {price.support}
+              </p>
+
+              <Button>
+                <Link href="#contact-us">Contact Us </Link>
+              </Button>
+            </div>
+          ))}
+        </div>
+      </div>
       {/* projects */}
-      <div id="projects" className="space-y-4 py-16 px-4 md:px-8">
+      <div
+        id="projects"
+        className="bg-primary-foreground rounded-md space-y-4 py-16 px-4 md:px-8"
+      >
         <h2 className="font-bold text-3xl md:text-4xl text-center">
           Our Recent Projects
         </h2>
@@ -152,7 +232,7 @@ export default function () {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
           {projects.map((project) => (
-            <div className="border p-8 rounded-md space-y-2 bg-primary-foreground text-center md:hover:scale-105 transition-transform duration-300 ease-in-out">
+            <div className="border p-8 rounded-md space-y-2 bg-white text-center md:hover:scale-105 transition-transform duration-300 ease-in-out">
               <h2 className="text-xl font-bold">{project.name}</h2>
               <p className="text-muted-foreground text-sm font-medium">
                 {project.service}
@@ -165,10 +245,7 @@ export default function () {
         </div>
       </div>
       {/* contact-us */}
-      <div
-        id="contact-us"
-        className="px-4 md:px-8 py-16 space-y-4 bg-primary-foreground"
-      >
+      <div id="contact-us" className="px-4 md:px-8 py-16 space-y-4">
         <h2 className="font-bold text-3xl md:text-4xl text-center">
           Contact Us
         </h2>
@@ -178,20 +255,20 @@ export default function () {
           we craft tailored solutions to elevate your brand and drive growth.
           Let's work together to bring your vision to life.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-          <div className="border p-8 rounded-md space-y-2 bg-white text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 lg:px-28">
+          <div className="bg-primary-foreground border p-8 rounded-md space-y-2 text-center">
             <FaSquarePhone className="text-primary mx-auto" size={40} />
             <h2 className="text-xl font-bold">Call Here</h2>
             <p className="text-muted-foreground font-medium">+91 9848012345</p>
           </div>
-          <div className="border p-8 rounded-md space-y-2 bg-white text-center">
+          <div className="bg-primary-foreground border p-8 rounded-md space-y-2 text-center">
             <FaSquareWhatsapp className="text-primary mx-auto" size={40} />
             <h2 className="text-xl font-bold">WhatsApp</h2>
             <p className="text-primary font-medium">
               <Link href="#">+91 9848012345</Link>
             </p>
           </div>
-          <div className="border p-8 rounded-md space-y-2 bg-white text-center">
+          <div className="bg-primary-foreground border p-8 rounded-md space-y-2 text-center">
             <MdEmail className="text-primary mx-auto" size={40} />
             <h2 className="text-xl font-bold">Mail Here</h2>
             <p className="text-primary font-medium">

@@ -14,6 +14,9 @@ export default function Navbar() {
             <Link href="#services">Services</Link>
           </h2>
           <h2 className="font-semibold hover:text-primary">
+            <Link href="#pricing">Pricing</Link>
+          </h2>
+          <h2 className="font-semibold hover:text-primary">
             <Link href="#projects">Projects</Link>
           </h2>
           {/* <h2 className="font-semibold hover:text-primary">

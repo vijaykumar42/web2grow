@@ -5,7 +5,7 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <div className="px-4 pt-12 pb-4 md:px-8 border-t text-center space-y-4">
+    <div className="px-4 pt-12 pb-4 md:px-8 border-t text-center space-y-4 bg-primary-foreground">
       <div className="flex justify-center items-center gap-4">
         <Link href="#">
           <FaLinkedin
